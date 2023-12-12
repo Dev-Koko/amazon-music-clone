@@ -6,22 +6,25 @@
     <title>Amazon Music Unlimited | Streaming </title>
     <link rel="icon" type="image/x-icon" href="images/fav.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="./hotsongs.css">
+    <link rel="stylesheet" href="playstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <header class="head">
         <div class="logo">
-        <img src="images/logo.svg" alt="amazon logo" style="width: 140px; height: 28px; ">
+        <a href="index.html"><img src="images/logo.svg" alt="amazon logo" style="width: 140px; height: 28px; "></a>
         </div>
 
 
-
+    <div class="body-container"></div>
         <div class="nav-link">
         <ul>
             <li>
-                <a href="#" id="home-link">
-                    <span class="icon"> <i class="fa-solid fa-house" style="font-size:18px"></i></span>
+                <a href="index.html" id="home-link">
+                    <span class="icon"></span> <i class="fa-solid fa-house" style="font-size:18px"></i></span>
                     <span class="text">&nbsp;HOME</span>
                 </a>
             </li>
@@ -30,49 +33,1105 @@
             <li>
                 <a href="#">
                     <span class="icon"></span> &nbsp <i class="fa-solid fa-podcast" style=" font-size:20px"></i></span>
-                    <span class="text">&nbsp;PODCASTS</span>
+                    <span class="text"> &nbsp;PODCASTS</span>
                 </a>
             </li>
 
             <li>
-                        <div class="dropdown">
-                        <a href="#">
-                        <i class="fas fa-headphones" style="font-size:20px"></i>
-                        <span class="text">&nbsp;LIBRARY</span>
-                        <i class="fas fa-chevron-down" style=" font-size:9px"></i>
-                        <div class="dropdown-content">
-                            <a href="#" id="musicId">Music</a>
-                            <a href="#">Podcasts</a>
-                        </div>
-                        </a>
-                        </div>
-                   
-                        
-                </li>
+                  <div class="dropdown">
+                  <a href="#">
+                  <i class="fas fa-headphones"  style="font-size:20px"></i>
+                  <span class="text"> &nbsp;LIBRARY</span>
+                  <i class="fas fa-chevron-down" style=" font-size:9px"></i>
+                  <div class="dropdown-content">
+                      <a href="play.html" id="musicId">Music</a>
+                      <a href="#">Podcasts</a>
+                  </div>
+                  </a>
+                  </div>        
+            </li>
 
             
             
         </ul>
         </div>
 
-        <div class="srch">
+        <div class="searchSearch">
             <input class="expandleft"  type="search" placeholder="   Search">
             <label class="searchbutton" ><span class="mglass">&#9906;</span></label>
+            <a href="signIn.html"><button class="btn-head">Sign in</button></a>
          </div>
-         <button class="btn-head">Sign in</button>
+         
     </header>
 
+    <div class="genContainer">
+      <input type="checkbox" id="seeAllToggle" class="visually-hidden">   
+    
+      <section class="artists-section">
+
+          <div class="section-header">
+
+            <h2>Hot Artists</h2>
+            <div class="controls-container">
+              <span class="icon" id="prevIcon">&lt;</span>
+              <span class="icon" id="nextIcon">&gt;</span>
+              <label for="seeAllToggle" class="see-all-btn">See All</label>
+            </div>
+
+          </div>
+
+        <div class="artists-list" id="artistsList">
+          <!-- Artist Images and Names -->
+          <div class="artist">
+            <img src="./images/Hot Artists/taylor-swift.jpg" alt="Artist 1">
+            <div class="play-button">&#9654;</div>
+            <p>Taylor Swift</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/drake.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Drake</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/ed-sheeran.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Ed Sheeran</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/morgan-wallen.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Morgan Wallen</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/mariah-carey.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Mariah Carey</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/eminem.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Eminem</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/zach-bryan.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Zach Bryan</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/justin-bieber.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Justin Bieber</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/ariana-grande.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Ariana Grande</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/pentatonix.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Pentatonix</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/bing-crosby.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Bing Crosby</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/kelly-clarkson.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Kelly Clarkson</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/lil-wayne.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Lil Wayne</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/nicki-minaj.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Nicki Minaj</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/michael-buble.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Michael Buble</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/andy-williams.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Andy Williams</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/future.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Future</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/brenda-lee.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Brenda Lee</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/elvis-presley.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Elvis Presley</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/luke-combs.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Luke Combs</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/chris-stapleton.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Chris Stapleton</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/elton-john.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Elton John</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/the-weeknd.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>The Weeknd</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/21-savage.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>21 Savage</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/mergan-trainor.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Mergan Trainor</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/kanye-west.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Kanye West</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/perry-como.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Perry Como</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/rihanna.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Rihanna</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/post-malone.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Post Malone</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/nat-king-cole.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Nat King Cole</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/gene-autry.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Gene Autry</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/bobby-helms.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Bobby Helms</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/carrie-underwood.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Carrie Underwood</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/bruno-mars.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Bruno Mars</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/wham.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Wham!</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/miley-cyrus.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Miley Cyrus</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/olivia-rodrigo.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Olivia Rodrigo</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/blake-shelton.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Blake Shelton</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/the-jackson-5.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>The Jackson 5</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/chris-brown.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Chris Brown</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/dean-martin.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Dean Martin</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/burl-ives.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Burl Ives</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/sza.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>SZA</p>
+          </div>
+          
+          <div class="artist">
+            <img src="./images/Hot Artists/katy-perry.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Katy Perry</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/jack-harlow.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Jack Harlow</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/jelly-roll.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Jelly Roll</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/john-legend.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>John Legend</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/doja-cat.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Doja Cat</p>
+          </div>
+
+          <div class="artist">
+            <img src="./images/Hot Artists/travis-scott.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Travis Scott</p>
+          </div>
+        </div>
+      </section>
+
+      <br><br><br>
+
+      <section class="hero-section">
+        <div class="hero">
+            <img src="./images/Banner/banner.jpg" alt="" id="heroimg">
+        </div>
+      </section>
+
+      <br>
+
+      <input type="checkbox" id="seeAllToggleRelease" class="visually-hidden"> 
+      
+      <section class="release-section">
+
+          <div class="section-header">
+
+            <h2>New Release Playlists</h2>
+            <div class="controls-container">
+              <span class="icon" id="prevIcon">&lt;</span>
+              <span class="icon" id="nextIcon">&gt;</span>
+              <label for="seeAllToggleRelease" class="see-all-btn2">See All</label>
+            </div>
+
+          </div>
+
+        <div class="release-list" id="releaseList">
+        <!-- Artist Images and Names -->
+            <div class="release">
+              <img src="./images/New Release Playlists/brand-new-music.jpg" alt="Artist 1">
+              <div class="play-button">&#9654;</div>
+              <p>Brand New Music <br><span class="s-para">Nicki Minaj, Tate McRae, P...</span></p>
+              
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/brand-new-music-latin.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Brand New Music La... <br><span class="s-para">NATTI NATASHA, J Balvin...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/hot-singles.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Hot Singles <br><span class="s-para">Kali Uchis, Karol G, Jung...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/la-semanal.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>La Semanal <br><span class="s-para">Carin Leon, Omar Mont...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/fresh-afro.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Fresh Afro <br><span class="s-para">Lojay, Olamide, Sarz an...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/country-heat.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Country Heat <br><span class="s-para">Zach Bryan, Chayce Be...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/fresh-alternative.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Fresh Alternative <br><span class="s-para">Green Day, The Killers, ...</span></p>
+            </div>
+
+            
+            <div class="release">
+              <img src="./images/New Release Playlists/divine-sound.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Divine Sound <br><span class="s-para">We Are Messengers, Ca...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/fresh-christian.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Fresh Christian <br><span class="s-para">Rend Collective, Dwan ...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/rap-rotation.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Rap Rotation <br><span class="s-para">Nicki Minaj, 2 Chainz, L...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/fresh-classical.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Fresh Classical <br><span class="s-para">Yoav Levanon, Anastas...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/rock-arena.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Rock Arena <br><span class="s-para">Warren Zeiders, Shined...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/rap-rotation.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Rap Rotation <br><span class="s-para">Nicki Minaj, 2 Chainz, L...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/fresh-classical.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Fresh Classical <br><span class="s-para">Yoav Levanon, Anastas...</span></p>
+            </div>
+
+            <div class="release">
+              <img src="./images/New Release Playlists/rock-arena.jpg" alt="Artist 2">
+              <div class="play-button">&#9654;</div>
+              <p>Rock Arena <br><span class="s-para">Warren Zeiders, Shined...</span></p>
+            </div>
+        </div>
+
+      </section>
+    
+      <br><br>
+  
+
+    <section class="hotsongs-section">
+        <h2>Hot Songs</h2>
+        <div class="container">
+            <div>
+                <img src="./hotsongs_images/last_christmas.jpg" alt="ghost man">
+                <a href="#" id="songtitle">Last Christmas</a>
+                <br>
+                <a href="#" id="artistname">Wham!</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/jingle-bell-rock.jpg" alt="ghost man">
+                <a href="#" id="songtitle">Jingle Bell Rock</a>
+                <br>
+                <a href="#" id="artistname">Bobby Helms</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/jingle-bells.jpg" alt="ghost man">
+                <a href="#" id="songtitle">Jingle Bells (Remastered 1999)</a>
+                <br>
+                <a href="#" id="artistname">Frank Sinatra
+                </a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/all-i-want.jpg" alt="ghost man">
+                <a href="#" id="songtitle">All I Want for Christmas Is You
+                </a>
+                <br>
+                <a href="#" id="artistname">Mariah Carey</a>
+            </div> 
+            <div>
+                <img src="./hotsongs_images/most-wonderful-time.jpg" alt="ghost man">
+                <a href="#" id="songtitle">It's the Most Wonderful Time of the Year</a>
+                <br>
+                <a href="#" id="artistname">Andy Williams</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/santa-tell-me.jpg" alt="ghost man">
+                <a href="#" id="songtitle">Santa Tell Me</a>
+                <br>
+                <a href="#" id="artistname">Ariana Grande</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/white-christmas.jpg" alt="ghost man">
+                <a href="#" id="songtitle">
+                    White Christmas (1947 Version)[feat...
+                    <!-- Ken Darby Singers & John Scott Trotter and His Orchestra] -->
+                </a>
+                <br>
+                <a href="#" id="artistname">
+                    Bing Crosby [feat. Ken Darby Singers & John Scot
+                    <!-- tt Trotter & His Orchestra] --> 
+                </a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/losing-me.jpg" alt="ghost man">
+                <a href="#" id="songtitle">You're Losing Me (From The Vault)
+                </a>
+                <br>
+                <a href="#" id="artistname">Taylor Swift</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/sleigh-ride.jpg" alt="ghost man">
+                <a href="#" id="songtitle">Sleigh Ride</a>
+                <br>
+                <a href="#" id="artistname">The Ronette</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/the-christmas-tree.jpg" alt="ghost man">
+                <a href="#" id="song title">Rockin' Around The Christmas Tree</a>
+                <br>
+                <a href="#" id="artistname">Brenda Lee</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/mr-grinch.jpg" alt="ghost man">
+                <a href="#" id="song title">You’re A Mean One, Mr. Grinch</a>
+                <br>
+                <a href="#" id="artistname">Thurl Ravenscroft</a>
+            </div>
+            <div>
+                <img src="./hotsongs_images/everything.jpg" alt="ghost man">
+                <a href="#" id="song title">I Remember Everything (feat. Kacey ...
+                  <!--Musgraves)-->
+                </a>
+                <br>
+                <a href="#" id="artistname">Zach Bryan [feat. Kacey Musgraves]</a></div>
+          
+    </section>
+
+    <input type="checkbox" id="seeAllToggle3" class="visually-hidden"> 
+
+    <section class="HotPlaylists-section">
+
+      <div class="section-header">
+
+        <h2>Hot Playlists</h2>
+        <div class="controls-container">
+          <span class="icon" id="prevIcon">&lt;</span>
+          <span class="icon" id="nextIcon">&gt;</span>
+          <label for="seeAllToggle3" class="see-all-btn3">See All</label>
+        </div>
+  
+      </div>
+
+      <div class="Hot-list" id="hotList">
+        <!-- Artist Images and Names -->
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/classics.jpg" alt="Artist 1">
+          <div class="play-button">&#9654;</div>
+          <p>Christmas Classics <br><span class="s-para">Bobby Helms, Gene Au...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/greatest.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Greatest Christmas ... <br><span class="s-para">Brenda Lee, Mariah Car...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/rediscover.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>REDISCOVER Pentat... <br><span class="s-para">Pentatonix, Andrea Bo...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/piano.webp" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Christmas Piano <br><span class="s-para">Lang Lang, Chloe Flow...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/pop.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Holiday Pop <br><span class="s-para">Justin Bieber, Jonas Br...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/mellow.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Mellow '70s Gold' <br><span class="s-para">Eagles, America, Elton ...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/merry.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Merry Mix <br><span class="s-para">Mariah Carey, Carrie U...</span></p>
+        </div>
+
+        
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/instrument.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Christmas Instrume... <br><span class="s-para">Chad Lawson, Californi...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/bing.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>REDISCOVER Binge C... <br><span class="s-para">Bing Crosby, Peggy Lee...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/fireside.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Fireside Piano <br><span class="s-para">Marcus Wilhelmsson, T...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/country.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Classic Country Chri... <br><span class="s-para">Dolly Parton, Alan Jack...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/present.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Christmas Present <br><span class="s-para">Jimmy Fallon, Meghan ...</span></p>
+        </div>
+
+        <div class="hotlist">
+          <img src="./images/Hot Playlists/fireside.jpg" alt="Artist 2">
+          <div class="play-button">&#9654;</div>
+          <p>Fireside Piano <br><span class="s-para">Marcus Wilhelmsson, T...</span></p>
+        </div>
+      </div>
+
+    </section>
     <br><br>
 
-    <div class="hero">
-        <img src="./images/heroImage.png" alt="" id="heroimg">
-    </div>
+    <input type="checkbox" id="seeAllToggle4" class="visually-hidden">
+
+    <section class="MostPopular-section">
+
+      <div class="section-header">
+
+        <h2>Most Popular Podcasts</h2>
+        <div class="controls-container">
+          <span class="icon" id="prevIcon">&lt;</span>
+          <span class="icon" id="nextIcon">&gt;</span>
+          <label for="seeAllToggle4" class="see-all-btn4">See All</label>
+        </div>
+
+      </div>
+
+      <div class="MostPopular-list" id="mostpopularList">
+          <!-- Artist Images and Names -->
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/mrballen.jpg" alt="Artist 1">
+            <div class="play-button">&#9654;</div>
+            <p>MrBallen Podcast: S...</p>
+            
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/npr.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>NPR News Now</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/morbid.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Morbid</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/dateline.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Dateline NBC</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/smartless.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Smartless</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/wait.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Wait Wait... Don't T...</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/crime-junkie.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Crime Junkie</p>
+          </div>
+
+          
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/48-hours.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>48 Hours</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/20.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>20/20</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/the-daily.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>The Daily</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/up-first.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Up First</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/something.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Something Was Wr...</p>
+          </div>
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/mrballen.jpg" alt="Artist 1">
+            <div class="play-button">&#9654;</div>
+            <p>MrBallen Podcast: S...</p>
+            
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/npr.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>NPR News Now</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/morbid.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Morbid</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/dateline.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Dateline NBC</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/smartless.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Smartless</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/wait.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Wait Wait... Don't T...</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/crime-junkie.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>Crime Junkie</p>
+          </div>
+
+          
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/48-hours.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>48 Hours</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/20.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>20/20</p>
+          </div>
+
+          <div class="popular">
+            <img src="./images/Most Popular Podcasts/the-daily.jpg" alt="Artist 2">
+            <div class="play-button">&#9654;</div>
+            <p>The Daily</p>
+          </div>
+      </div>  
+
+    </section>
+      <br>
+      
+    <input type="checkbox" id="seeAllToggle5" class="visually-hidden">
+    <section class="HotAlbums-section">
+
+      <div class="section-header">
+
+        <h2>Hot Albums</h2>
+        <div class="controls-container">
+          <span class="icon" id="prevIcon">&lt;</span>
+          <span class="icon" id="nextIcon">&gt;</span>
+          <label for="seeAllToggle5" class="see-all-btn">See All</label>
+        </div>
+
+      </div>
+
+      <div class="HotAlbums-list" id="HotAlbumsList">
+      <!-- Artist Images and Names -->
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/rudolph.webp" alt="Artist 1">
+        <div class="play-button">&#9654;</div>
+        <p>Rudolph The Red N... <br><span class="s-para">Gene Autry</span></p>
+        
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/andy.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Andy Williams ... <br><span class="s-para">Andy Williams</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/white.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>White Christmas <br><span class="s-para">Bing Crosby</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/number.webp" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Christmas Number 1's <br><span class="s-para">VARIOUS ARTISTS</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/gift.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>A Christmas Gift Fr... <br><span class="s-para">VARIOUS ARTISTS</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/pentatonix.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>A Pentatonix Chris... <br><span class="s-para">Pentatonix</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/merry.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Merry Christmas <br><span class="s-para">Mariah Carey</span></p>
+      </div>
+
+      
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/song.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Christmas Song... <br><span class="s-para">Nat King Cole</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/lover.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Lover <br><span class="s-para">Taylor Swift</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/classic.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Classic Christm... <br><span class="s-para">Elvis Presley</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/reputation.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>reputation <br><span class="s-para">Taylor Swift</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/andy.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Andy Williams ... <br><span class="s-para">Andy Williams</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/white.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>White Christmas <br><span class="s-para">Bing Crosby</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/number.webp" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Christmas Number 1's <br><span class="s-para">VARIOUS ARTISTS</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/gift.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>A Christmas Gift Fr... <br><span class="s-para">VARIOUS ARTISTS</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/pentatonix.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>A Pentatonix Chris... <br><span class="s-para">Pentatonix</span></p>
+      </div>
+
+      <div class="hotalbums">
+        <img src="./images/Hot Albums/merry.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Merry Christmas <br><span class="s-para">Mariah Carey</span></p>
+      </div>
+    </section>
+    <br>
+
+    <input type="checkbox" id="seeAllToggle6" class="visually-hidden">
+    <section class="Ad-FreePodcasts-section">
+
+      <div class="section-header">
+
+        <h2>Ad-Free Podcasts</h2>
+        <div class="controls-container">
+          <span class="icon" id="prevIcon">&lt;</span>
+          <span class="icon" id="nextIcon">&gt;</span>
+          <label for="seeAllToggle6" class="see-all-btn6">See All</label>
+        </div>
+
+      </div>
+
+      <div class="Ad-Free-list" id="Ad-FreeList">
+      <!-- Artist Images and Names -->
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/pardon.jpg" alt="Artist 1">
+        <div class="play-button">&#9654;</div>
+        <p>Pardon My Take</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/daily.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Daily</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/48.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>48 Hours</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/upfirst.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Up First</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/20.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>20/20</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/murder.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>My Favorite Murder ...</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/lowe.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Lowe Post</p>
+      </div>
+
+      
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/something.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Something Was Wr...</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/small-town.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Small Town Murder</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/american.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>American History T...</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/redhanded.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>RedHanded</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/actually.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>This Is Actually Hap...</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/pardon.jpg" alt="Artist 1">
+        <div class="play-button">&#9654;</div>
+        <p>Pardon My Take</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/daily.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Daily</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/48.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>48 Hours</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/upfirst.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Up First</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/20.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>20/20</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/murder.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>My Favorite Murder ...</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/lowe.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>The Lowe Post</p>
+      </div>
+
+      
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/something.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Something Was Wr...</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/small-town.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>Small Town Murder</p>
+      </div>
+
+      <div class="adfree">
+        <img src="./images/Ad-free Podcasts/american.jpg" alt="Artist 2">
+        <div class="play-button">&#9654;</div>
+        <p>American History T...</p>
+      </div>
+
+
+    </section>
+    <br><br>
+
+
+    </div>   
 
     <footer class="fclass">
         <div class="fcontent">
-            <p>Stream music and podcasts FREE on Amazon Music. No credit card required. <button class="btn-foot">Listen Free</button></p>
-            
+            <p>Stream music and podcasts FREE on Amazon Music. No credit card required. <button class="btn-foot">Listen Free</button></p> 
         </div>
     </footer>
+     
+
 </body>
 </html>

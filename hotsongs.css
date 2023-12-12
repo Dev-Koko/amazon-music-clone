@@ -1,0 +1,60 @@
+.hotsongs-section{
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.hotsongs-section h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(381px,1fr));
+    grid-template-rows: 3;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container div{
+    line-height: 20px;
+}
+
+.container div > img{
+    width: 53px;
+    height: 49px;
+    margin-bottom: 20px;
+    float: left;
+    object-fit: cover;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius:3px;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;   
+}
+
+.container a{
+    text-decoration: none;
+    margin-left:15px;    
+}
+
+.container a:hover{
+    color: rgb(48, 216, 216);
+    cursor: pointer;
+}
+
+.container div a:first-of-type{
+    font-size:14.5px;
+    font-weight:500;
+}
+
+.container div a:last-of-type{
+    font-size: 13.1px;
+    font-weight:500;
+}
