@@ -5,8 +5,8 @@
   
   .artists-section {
     width: 100%;
-    margin-top: 10px;
-    padding: 25px;
+    margin-top: 0px;
+    padding: 20px;
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
@@ -145,6 +145,8 @@
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   }
 
+  
+
   .popular img{
   object-fit: cover;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
@@ -152,6 +154,11 @@
   width: 100%;
   height: 100%;
 
+  }
+
+   .artist:hover, .release:hover, .popular:hover, .hotalbums:hover, .adfree:hover, .hotlist:hover img {
+    transform: scale(1.0); /* Increase size on hover */
+    filter: brightness(0.5); /* Apply black opacity on hover */
   }
 
   .adfree p {
@@ -169,10 +176,7 @@
     color: #fff; /* Set the color of the artist name */
   }
 
-  .artist:hover img {
-    transform: scale(1.0); /* Increase size on hover */
-    filter: brightness(0.5); /* Apply black opacity on hover */
-  }
+  
 
   .artist p {
     margin: -1px 0;
@@ -182,22 +186,28 @@
 
   .play-button {
     position: absolute;
+    width: 60px; /* makes a cirlce*/
+    height: 60px; /* makes a cirlce*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none; /* Initially hide the play button */
     font-size: 36px; 
     color: #fff; /* Set the color of the play button */
-    background-color: rgba(0, 0, 0, 0.7); /* Add a background color with some transparency */
+    background-color: rgba(0, 0, 0, 0.25); /* Add a background color with some transparency */
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    padding-inline-start:8px; /*centers the triangle*/
+    padding-top: 8px;
     cursor: pointer;
-    width: 40px;
-    height: 40px
+    backdrop-filter: blur(2px);
   }
   
-  .artist:hover .play-button {
+  .play-button:hover{
+    background-color: rgba(255, 255, 255,0.3 );
+    transition: ease-in-out 0.2s;
+  }
+ .artist:hover .play-button, .release:hover .play-button, .hotlist .play-button, .adfree .play-button, .popular .play-button, .hotalbums .play-button  {
     display: block; /* Show play button on hover */
   }
 
@@ -206,6 +216,7 @@
 @media only screen and (max-width: 770px) {
   .artist {
     width: calc((100% - 80px) / 3);
+  
   }
 
 
@@ -214,6 +225,7 @@
 @media only screen and (max-width: 480px) {
   .artist {
     width: calc((100% - 40px) / 2);
+    
   }
 
 
@@ -222,6 +234,7 @@
 @media only screen and (max-width: 320px) {
   .artist {
     width: 100%;
+    
   }
 
 
@@ -329,7 +342,6 @@
   width: 100%;
   margin-top: 10px;
   padding: 20px;
-  padding-top: 20px;
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
@@ -371,7 +383,7 @@
 .Hot-list{
   display: flex;
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
-  gap: 50px;
+  gap: 20px;
   justify-content: flex-start; 
 
 }
@@ -489,7 +501,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 200px;
 }
 
 
@@ -531,6 +542,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* For Hot Songs*/
+#seeAllToggle7:checked ~ .release-section .section-header,
+#seeAllToggle7:checked ~ .release-section,
+#seeAllToggle7:checked ~ .MostPopular-section,
+#seeAllToggle7:checked ~ .HotAlbums-section,
+#seeAllToggle7:checked ~ .Hot-section,
+#seeAllToggle7:checked ~ .HotPlaylists-section,
+#seeAllToggle7:checked ~ .Ad-FreePodcasts-section,
+#seeAllToggle7:checked ~ .hero,
+#seeAllToggle7:checked ~ .release-header,
+#seeAllToggle7:checked ~ .artist-section .artists-list {
+  display: none;
+}
+
+#seeAllToggle7:checked + .hotsongs-section .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 /*visually hide the checkbox */

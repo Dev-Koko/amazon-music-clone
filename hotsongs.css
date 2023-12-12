@@ -7,12 +7,6 @@
     border-radius: 8px;
     box-sizing: border-box;
 }
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-  }
 
 .hotsongs-section h2{
     color: #fff;
@@ -20,33 +14,9 @@
     font-weight: 600px;
 }
 
-.controls-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    height: 20px; /* Set a consistent height for icons and button */
-  }
-  
-  .icon {
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-
-  
-  .see-all-btn {
-    background-color: rgba(225, 225, 225, 0.25);
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
 .container{
     display: grid;
-    grid-template-columns: repeat(4,minmax(413px,1fr));
+    grid-template-columns: repeat(4,minmax(381px,1fr));
     grid-template-rows: 3;
     width: auto;
     height: auto;
@@ -87,4 +57,21 @@
 .container div a:last-of-type{
     font-size: 13.1px;
     font-weight:500;
+}
+.container div:hover > img{
+    transform: scale(1.0); /* Increase size on hover */
+    filter: brightness(0.5); /* Apply black opacity on hover */
+  }
+
+  .plybtn { /*play button for the grid pictures*/
+  color: #fff;
+  position: absolute;
+  padding-top: 13px;
+  padding-inline-start: 20px;
+  display: none;
+  cursor: pointer;
+}
+.container div:hover .plybtn {
+  display: block;
+  color:  rgb(173, 243, 243);
 }
