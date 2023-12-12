@@ -58,3 +58,20 @@
     font-size: 13.1px;
     font-weight:500;
 }
+.container div:hover > img{
+    transform: scale(1.0); /* Increase size on hover */
+    filter: brightness(0.5); /* Apply black opacity on hover */
+  }
+
+  .plybtn { /*play button for the grid pictures*/
+  color: #fff;
+  position: absolute;
+  padding-top: 13px;
+  padding-inline-start: 20px;
+  display: none;
+  cursor: pointer;
+}
+.container div:hover .plybtn {
+  display: block;
+  color:  rgb(173, 243, 243);
+}
