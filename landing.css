@@ -55,6 +55,7 @@
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
   gap: 20px;
   justify-content: flex-start; 
+  padding: 20px;
   
 }
 
@@ -92,6 +93,7 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     padding: 20px;
+    margin-top: 10px;
     /* Hide overflowing content */
     
   }
@@ -340,8 +342,8 @@
 .HotPlaylists-section{
 
   width: 100%;
-  margin-top: 10px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 40px;
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
@@ -383,8 +385,10 @@
 .Hot-list{
   display: flex;
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
-  gap: 20px;
+  gap: 40px;
   justify-content: flex-start; 
+ 
+  
 
 }
 
@@ -395,6 +399,7 @@
   height: 170px;
   margin: 5px;
   flex: 0 0 auto;
+  margin-top: 10px;
 
 }
 
